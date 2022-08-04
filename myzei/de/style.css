@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #edd99d;
+  text-align: left;
+  font-size:20px;
+  background-image: url(fotki/oboi.png); background-position: center; }
+a {
+  color: #cdb97d;
+  text-decoration: underline;
+  background-color: transparent; }
+  a:hover {
+    color: #edd99d;
+    text-decoration: underline; }
+  
+    a.button {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      padding: 12px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: Tahoma;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 100;
+    }
+    
+    a.button-white {
+      background-color: rgb(25, 0, 255);
+    }
+
+    a.button-black {
+      background-color: black;
+    }
