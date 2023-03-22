@@ -7,7 +7,7 @@ body {
   color: #edd99d;
   text-align: left;
   font-size:20px;
-  background-image: url(fotki/oboi.png); background-position: center; }
+  background-image: url(../de/fotki/oboi.png); background-position: center; }
 a {
   color: #cdb97d;
   text-decoration: underline;
