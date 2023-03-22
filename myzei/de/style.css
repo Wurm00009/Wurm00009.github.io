@@ -27,6 +27,17 @@ a {
       line-height: 1;
       font-weight: 100;
     }
+    a.button-red {
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      padding: 12px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: Tahoma;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 100;
+    }
     
     a.button-white {
       background-color: rgb(25, 0, 255);
@@ -37,9 +48,9 @@ a {
     }
 
     a.button-red {
-      background-color: red;
+      background-color: #c0c7c2;
     }
     
     a.button-cok {
-      background-color: rebeccapurple;
+      background-color: #613C6F;
     }
