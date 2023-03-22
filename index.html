@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  
+  
+  <title>Wurm's museum</title>
+<meta name="description" content="Музей.">
+
+<meta http-equiv="cleartype" content="on">
+<meta name="MobileOptimized" content="375">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="/manifest.json">
+
+
+<link rel="shortcut icon" href="images/de.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3475584-13"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-3475584-13');
+</script>  
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body class="is-loading">
+
+<style>
+
+	@keyframes ani-loading-spin {
+		from { transform: rotate(0deg); }
+		to {  transform: rotate(360deg); }
+	}
+
+	@keyframes ani-hourglass{
+	    0%{
+	        transform:rotate(0deg);
+	        box-shadow:
+	            inset black 0 0 0 0,
+	            inset white 0 2em 0 0,
+	            inset black 0 4em 0 0,
+	            inset white 0 4em 0 0;
+	    }
+	    80%{
+	        transform:rotate(0deg);
+	        box-shadow:
+	            inset black 0 2em 0 0,
+	            inset white 0 2em 0 0,
+	            inset black 0 2em 0 0,
+	            inset white 0 4em 0 0;
+	    }
+	    100%{
+	        transform:rotate(180deg);
+	        box-shadow:
+	            inset black 0 2em 0 0,
+	            inset white 0 2em 0 0,
+	            inset black 0 2em 0 0,
+	            inset white 0 4em 0 0;
+	    }
+	}
+	
+	.loader {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 9999;
+		font-size: 8px;
+	}
+
+		.loader__bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #191114;
+			transform-origin: top left;
+		}
+
+
+		.loader__icon {
+			width: 2em;
+			height: 4em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -1em;
+			margin-top: -2em;
+			transform: translateZ( 2000px );
+			transform-origin: center;
+			webkit-transform-style: preserve-3d;
+		}
+
+			.loader__icon svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				box-shadow:
+			        inset black 0 0 0 0,
+			        inset white 0 2em 0 0,
+			        inset black 0 0 4em 0;
+			    animation: ani-hourglass 1s linear infinite;
+			}
+
+			.loader.is-inverse .loader__icon svg {
+				stroke: #191114;
+			}
+
+			.loader__icon svg .outer{
+			    fill:white;
+			}
+
+			.loader__icon svg .middle{
+			    fill:black;
+			}
+
+</style>
+
+<div class="loader  js-loader">
+	<div class="loader__bg  js-loaderBg"></div>
+	<div class="loader__icon  js-loaderIcon">
+		
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 206" preserveAspectRatio="none"><path class="middle" d="M120 0H0v206h120V0zM77.1 133.2C87.5 140.9 92 145 92 152.6V178H28v-25.4c0-7.6 4.5-11.7 14.9-19.4 6-4.5 13-9.6 17.1-17 4.1 7.4 11.1 12.6 17.1 17zM60 89.7c-4.1-7.3-11.1-12.5-17.1-17C32.5 65.1 28 61 28 53.4V28h64v25.4c0 7.6-4.5 11.7-14.9 19.4-6 4.4-13 9.6-17.1 16.9z"/><path class="outer" d="M93.7 95.3c10.5-7.7 26.3-19.4 26.3-41.9V0H0v53.4c0 22.5 15.8 34.2 26.3 41.9 3 2.2 7.9 5.8 9 7.7-1.1 1.9-6 5.5-9 7.7C15.8 118.4 0 130.1 0 152.6V206h120v-53.4c0-22.5-15.8-34.2-26.3-41.9-3-2.2-7.9-5.8-9-7.7 1.1-2 6-5.5 9-7.7zM70.6 103c0 18 35.4 21.8 35.4 49.6V192H14v-39.4c0-27.9 35.4-31.6 35.4-49.6S14 81.2 14 53.4V14h92v39.4C106 81.2 70.6 85 70.6 103z"/></svg>
+
+	</div>
+</div>
+<main>
+  
+  <div class="modular">
+    <div class="modular__item" data-module="intro">
+      <section class="intro" data-js="Intro">
+  <div class="intro__sizer js-sizer"></div>
+  <header class="intro__titleContainer">
+    <h1 class="title">
+      <span class="title__line title__line--indent">♧ Online</span>
+      <span class="title__line">WURMs museum</span>
+      <span class="title__line title__line--indent">Ценнейший</span>
+      <span class="title__line title__line--indent">Фотоархив</span>
+    </h1>
+  </header>
+  <div class="intro__announcementsContainer">
+    <div class="announcements js-announcements">
+  <ul class="announcements__list">
+    <li class="announcements__item">Музей в разработке</li>
+  </ul>
+</div>  </div>
+  <div class="intro__iconsContainer">
+    
+  </div>
+  <div class="intro__unicorn">
+    <img data-src="images/bestflag.gif" class="intro__unicorn__img js-criticalLazyLoad" alt="flag">
+  </div>
+  <div class="intro__bg">
+    <img src="images/e1.png" srcset="images/ex2.png 3000w, images/ex3.png 2500w, images/ex.jpeg 2000w, images/e1.png 1600w, images/e1.png 1200w, images/ex4.png 1024w, images/exm.png 800w, images/exm2.png 480w" sizes="100vw" class="intro__bg__img" alt>
+  </div>
+  <div class="intro__footer">
+    
+</section>    </div>
+    <div class="modular__item" data-module="textLayout">
+      <section class="textLayout">
+    <div class="textLayout__container">
+          <div class="textLayout__row" data-align="right">
+                  <div class="textLayout__column" data-column-width="4">
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                О музее
+              </div>
+                      </div>
+                  <div class="textLayout__column" data-column-width="6">
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                Музей представляет из себя архив, состоящий из фото прошлого. В основном это фотографии персон, либо вещей, связанных с Восточной Азией. Идея создать сайт возникла из-за того, что практически нет фотографий восточноазиатских квази-государств, нет знаний о быте тех людей.
+              </div>
+                      </div>
+              </div>
+      </div>
+</section>    </div>
+    <div class="modular__item" data-module="textLayout">
+      <section class="textLayout">
+    <div class="textLayout__container">
+          <div class="textLayout__row" data-align="right">
+                  <div class="textLayout__column" data-column-width="4">
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                WURM
+              </div>
+                      </div>
+                  <div class="textLayout__column" data-column-width="6">
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                WURM - мудрейшая персона, хранитель архива, создатель и разработчик сайта. 
+              </div>
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                Подпишитесь на мой
+              </div>
+                          <div class="textLayout__block" data-text-style="default" data-text-align="left">
+                → <a href="https://t.me/wurm0009" target="_blank" rel="nooper">канал</a>
+              </div>
+                      </div>
+              </div>
+      </div>
+</section>    </div>
+    <div class="modular__item" data-module="press">
+      
+<section class="press" data-js="Press" data-columns="1">
+
+  <div class="press__container">
+
+    
+      
+      <div class="press__category">
+        <h2 class="press__category__title">
+          MYZEI
+        </h2>
+
+        
+          
+
+          <ul class="press__items">
+                                        
+              <li class="press__item">
+                <a href="myzei/de/index.html" target="_blank" rel="noopener" class="press__text">
+                  <span class="press__title" title="de">
+                    Архив фотографий Дэ Ван Дэмчигдонрова
+                  </span>              
+
+                    
+                      
+                                                                          
+                        
+                                                  
+
+                      
+                    
+                  <span class="press__date" title="d">
+                    Prince De's photo archive
+                  </span>
+                </a>
+              </li>
+
+              <li class="press__item">
+                <a href="myzei/jap/index.html" target="_blank" rel="noopener" class="press__text">
+                  <span class="press__title" title="jap">
+                    Фото японских военных с zoom-ом
+                  </span>              
+
+                    
+                      
+                                                                          
+                        
+                                                  
+
+                      
+                    
+                  <span class="press__date" title="d">
+                    Japanese military photo
+                  </span>
+                </a>
+              </li>
+              
+              <li class="press__item">
+                <a href="myzei/ji/index.html" target="_blank" rel="noopener" class="press__text">
+                  <span class="press__title" title="jap">
+                    Элементы жизни азиатских квази-государств
+                  </span>              
+
+                    
+                      
+                                                                          
+                        
+                                                  
+
+                      
+                    
+                  <span class="press__date" title="d">
+                    Routine of Asian states
+                  </span>
+                </a>
+              </li>
+
+                                        
+            
+                      </ul>
+        
+      </div>
+    
+<script>
+  document.body.removeAttribute("style");
+</script>
+
+<script type="text/javascript" src="js/main.bundle.js"></script>
+</body></html>
